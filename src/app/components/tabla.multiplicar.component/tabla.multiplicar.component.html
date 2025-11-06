@@ -1,0 +1,19 @@
+<div>
+    <h1>Tabla del {{numero}}</h1>
+    <table style="margin:auto; width:60%">
+        <thead style="margin:auto; width:60%">
+            <tr>
+                <th>Operacion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody style="margin:auto; width:60%; text-align: center;">
+            @for(resultado of resultados; track resultado; let i=$index){
+            <tr>
+                <td>{{numero}} * {{i}}</td>
+                <td>{{resultado}}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

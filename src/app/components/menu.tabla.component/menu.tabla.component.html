@@ -1,0 +1,12 @@
+<div>
+    <ul>
+        <li>
+            <a [routerLink]="['/']">Home</a>
+        </li>
+        @for(num of numeros; track num){
+        <li>
+            <a [routerLink]="['/tabla/',num]">Tabla del {{num}}</a>
+        </li>
+        }
+    </ul>
+</div>

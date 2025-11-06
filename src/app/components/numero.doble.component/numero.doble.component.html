@@ -1,3 +1,14 @@
 <div>
-    <h1>Numero doble</h1>
+    <h1>Doble routing</h1>
+    @if(numero){
+    <h2 style="color:blue">
+        El doble de {{numero}} es {{doble}}
+    </h2>
+    }@else{
+    <h2 style="color:fuchsia">No hemos recibido numero</h2>
+    }
+    <button (click)="goToHome()">Home</button>
+    <button (click)="redirect(20)">Doble 20</button>
+    <button (click)="redirect(340)">Doble 340</button>
+    <button (click)="redirect(5)">Doble 5</button>
 </div>

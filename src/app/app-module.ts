@@ -9,6 +9,8 @@ import { MusicaComponent } from './components/musica.component/musica.component'
 import { MenuComponent } from './components/menu.component/menu.component';
 import { NotfoundComponent } from './components/notfound.component/notfound.component';
 import { NumeroDobleComponent } from './components/numero.doble.component/numero.doble.component';
+import { MenuTablaComponent } from './components/menu.tabla.component/menu.tabla.component';
+import { TablaMultiplicarComponent } from './components/tabla.multiplicar.component/tabla.multiplicar.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { NumeroDobleComponent } from './components/numero.doble.component/numero
     MusicaComponent,
     MenuComponent,
     NotfoundComponent,
-    NumeroDobleComponent
+    NumeroDobleComponent,
+    MenuTablaComponent,
+    TablaMultiplicarComponent
   ],
   imports: [
     BrowserModule,
