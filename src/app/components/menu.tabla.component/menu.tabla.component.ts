@@ -8,17 +8,17 @@ import { Component,OnInit } from '@angular/core';
 })
 export class MenuTablaComponent {
   public numeros:Array<number>;
-  public numero:number;
+  
 
   constructor(){
     this.numeros=[];
-    this.numero=0;
+    
   }
 
   ngOnInit(){
     for (let i=0;i<6;i++){
-      this.numero= Math.floor(Math.random()*100+1);
-      this.numeros.push(this.numero);
+      let numero= Math.floor(Math.random()*100+1);
+      this.numeros.push(numero);
     }
   }
 }
